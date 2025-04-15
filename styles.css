@@ -1,9 +1,11 @@
 :root{
     --charcoal: #40514e;
-    --soft-bg: #c4f0f9;
-    --darker-teal: #66bfbf;
+    --soft-bg: linear-gradient(110deg,rgba(196, 240, 249, 1) 0%, rgba(140, 236, 255, 1) 50%, rgba(125, 245, 233, 1) 100%);
+    /* soft-bg: #c4F0F9; */
+    --darker-teal: linear-gradient(160deg,rgba(102, 191, 191, 1) 0%, rgba(141, 214, 214, 1) 50%, rgba(102, 191, 191, 1) 100%);
     --btn-teal: #11cdd4;
     --darkest-teal: #11999e;
+    --teal-text: #2b7272;
 }
 
 body {
@@ -14,14 +16,14 @@ body {
   }
   
   h1 {
-    color: #66bfbf;
+    color: var(--teal-text);
     font-size: 5.625rem;
     margin: 50px auto 0 auto;
     font-family: "Sacramento", cursive;
   }
   
   h2 {
-    color: #66bfbf;
+    color: var(--teal-text);
     font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
     font-weight: normal;
@@ -29,7 +31,7 @@ body {
   }
   
   h3 {
-    color: var(--darkest-teal);
+    color: var(--teal-text);
     font-family: "Montserrat", sans-serif;
   }
   
@@ -45,7 +47,7 @@ body {
   }
   
   a {
-    color: #11999e;
+    color: var(--teal-text);
     font-family: "Montserrat", sans-serif;
     margin: 10px 20px;
     text-decoration: none;
@@ -59,7 +61,8 @@ body {
   }
   
   .top-container {
-    background-color: var(--soft-bg);
+    /* background-color: var(--soft-bg); */
+    background-image: var(--soft-bg);
     position: relative;
     padding-top: 100px;
   }
@@ -69,12 +72,12 @@ body {
   }
   
   .bottom-container {
-    background-color: var(--darker-teal);
+    background-image: var(--darker-teal);
     padding: 50px 0 20px;
   }
 
   .skills{
-    background-color: var(--soft-bg);
+    background-image: var(--soft-bg);
     padding-top: 0.5vh;
   }
   
@@ -98,7 +101,7 @@ body {
     margin: 40px auto 40px;
   }
   .contact-me{
-    background-color: var(--soft-bg);
+    background-image: var(--soft-bg);
     margin: 40px auto 40px;
     padding-bottom: 20px;
 
@@ -209,7 +212,7 @@ body {
 .card {
     width: 300px;
     margin: 20px;
-    background-color: var(--soft-bg);
+    background-image: var(--soft-bg);
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
